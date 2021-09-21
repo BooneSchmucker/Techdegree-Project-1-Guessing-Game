@@ -17,10 +17,11 @@ compute = "Hmm.. DOES NOT COMPUTE.. Try 1 - 10 again.  "
 yay = "Hurray! GuessNumber3000 is happy! :)"
 sad = "GuessNumber3000 is sad to see you go. :("
 HS = "***New High Score! Welcome to the record books!***"
+tie = "***You tied your high score!***"
 
 print (welcome_message)
 
-high_score = 10 #every high score is new high score (FIX IT)
+high_score = 10                                      #every high score is new high score (FIX IT)
 
 def start_game():
     magic_number = random.randint(1,10)
@@ -43,8 +44,10 @@ def start_game():
                 break
     print ("Got It! It took you {} guesses.".format(guess_count))
     if guess_count < high_score:
-        highscore = guess_count
+        highscore = int("{}".format(guess_count))
         print (HS)
+    elif guess_count == high_score:
+        print (tie)
     print (end)
     play_again = str(input("press Y to play again.  "))
     if play_again.upper() == "Y":
