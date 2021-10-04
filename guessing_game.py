@@ -3,14 +3,14 @@ import sys
 
 welcome_message = ("Welcome to GuessNumber3000! I am thinking of a number between 1 and 10. Can you guess the number?")
 prompt1 = "Guess the magic number between 1 and 10!  "
-lower = "      ***It's lower. Try again***  "
-higher = "      ***It's higher. Try again***  "
-end = "Play again to see if you can beat your high score?"
-NIR = "***GuessNumber3000 only uses numbers 1 - 10.***"
-compute = "Hmm.. DOES NOT COMPUTE.. Try 1 - 10 again.  "
-yay = "Hurray! GuessNumber3000 is happy! :)"
-sad = "GuessNumber3000 is sad to see you go. :("
-HS = "***New High Score! Welcome to the record books!***"
+lower = "      *** It's lower. Try again ***  "
+higher = "      *** It's higher. Try again ***  "
+end = "*** That was fun! Play again to beat your high score? ***"
+NIR = "*** GuessNumber3000 only uses numbers 1 - 10 ***"
+compute = "*** Hmm.. DOES NOT COMPUTE.. Try 1 - 10 again ***"
+yay = "*** Hurray! GuessNumber3000 is happy! :) ***"
+sad = "*** Done already? GuessNumber3000 is sad to see you go. :( ***"
+HS = "*** New High Score! Welcome to the record books! ***"
 
 print (welcome_message)
 
