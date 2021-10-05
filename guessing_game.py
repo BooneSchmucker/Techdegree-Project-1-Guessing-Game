@@ -13,13 +13,13 @@ sad = "*** Done already? GuessNumber3000 is sad to see you go. :( ***"
 HS = "*** New High Score! Welcome to the record books! ***"
 
 print (welcome_message)
+scores = [10]
+high_score = min(scores)
 
 def start_game():
     magic_number = random.randint(1,10)
     guess_count = 1
     while True:
-        scores = [10]
-        high_score = min(scores)
         try:
             guess = int(input(prompt1))
             if guess < 1 or guess > 10:
